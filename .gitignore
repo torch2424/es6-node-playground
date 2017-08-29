@@ -3,6 +3,8 @@
 *
 **/*
 
+# Never gitignore the main README
+!README.md
 
 # Gitignore built css
 src/**/*.css
