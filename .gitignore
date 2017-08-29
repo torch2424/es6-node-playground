@@ -1,3 +1,9 @@
+# Gitignore the entire project
+# Comment the below lines to make changes to the project
+*
+**/*
+
+
 # Gitignore built css
 src/**/*.css
 
