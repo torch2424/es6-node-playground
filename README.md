@@ -1,5 +1,5 @@
 # js-playground
-a gitignored javascript (react/ES6) playground for testing node modules, and random ideas
+a gitignored javascript (react/ES6) playground for testing node modules, and random ideas. Also has support for sass
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
