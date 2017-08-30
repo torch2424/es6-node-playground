@@ -1,13 +1,3 @@
-# Gitignore the entire project
-# Comment the below lines to make changes to the project
-*
-**/*
-
-# Never gitignore the gitignore, main README, and docs
-!.gitignore
-!README.md
-!docs/**/*
-
 # Gitignore built css
 src/**/*.css
 

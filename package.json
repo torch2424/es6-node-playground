@@ -7,7 +7,8 @@
     "npm-run-all": "^4.1.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.12"
+    "react-scripts": "1.0.12",
+    "sass-bem-mixins": "^1.1.2"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
@@ -16,6 +17,8 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "assume-unchanged": "./assume-unchanged.sh true",
+    "assume-changed": "./assume-unchanged.sh false"
   }
 }

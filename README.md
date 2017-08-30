@@ -14,16 +14,29 @@ Simply clone the project:
 git clone https://github.com/torch2424/js-playground.git
 ```
 
-To make changes to the project itself, for Pull Requests and things, be sure to uncomment the following from the .gitignore. Example:
+To stop all changes from being detected in the project, run the assume unchanged script:
 
 ```
-# Gitignore the entire project
-# Comment the below lines to make changes to the project
-# *
-# **/*
+# ./assume-unchanged.sh true
+npm run assume-unchanged
 ```
 
-## Usage
+For developing on the project itself, changes can be detected again using:
+
+```
+# ./assume-unchanged.sh false
+npm run assume-changed
+```
+
+
+## Example Usage
+
+Stop all changes from being detected:
+
+```
+# ./assume-unchanged.sh true
+npm run assume-unchanged
+```
 
 Simply add a random node module to the project
 
@@ -32,13 +45,6 @@ npm install --save pretty-bytes
 ```
 
 And notice how it will not detect any changes!
-
-To reset back to the latest master:
-
-```
-git fetch
-git reset --hard origin/master
-```
 
 ## LICENSE
 
