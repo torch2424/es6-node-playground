@@ -3,7 +3,8 @@
 *
 **/*
 
-# Never gitignore the main README, and docs
+# Never gitignore the gitignore, main README, and docs
+!.gitignore
 !README.md
 !docs/**/*
 
