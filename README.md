@@ -17,15 +17,24 @@ git clone https://github.com/torch2424/js-playground.git
 To stop all changes from being detected in the project, run the assume unchanged script:
 
 ```
-# ./assume-unchanged.sh true
 npm run assume-unchanged
+
+# Will runL # ./assume-unchanged.sh true
 ```
 
 For developing on the project itself, changes can be detected again using:
 
 ```
-# ./assume-unchanged.sh false
 npm run assume-changed
+
+# Will run: ./assume-unchanged.sh false
+```
+
+To reset the project back to master after testing something, run the followoing:
+```
+npm run reset
+
+# Will run: npm run assume-changed && git reset --hard origin/master && npm run assume-unchanged
 ```
 
 
