@@ -4,7 +4,7 @@ if [ $# -ne 1 ]; then
 else
   for file in `find . -type f | grep -v node_modules | grep -v .git`; do
     if [ $1 = "true" ]; then
-      git update-index --no-assume-unchanged $file
+      git update-index --assume-unchanged $file
     else
       git update-index --no-assume-unchanged $file
     fi
